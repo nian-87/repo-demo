@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Personal Portfolio </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header id="home">
+    <h1>My Personal Portfolio</h1>
+    <nav>
+        <ul class="nav-menu">
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+<figure class="profile-figure">
+    <img src="picture.jpg" alt="Profile Picture">
+    <figcaption>Hi I'm Sonnia</figcaption>
+</figure>
+
+<div class="page-content"> <!--SELECTING HTML ELEMENTS--> 
+
+    <p id="para1" class="card-body">
+        Hello! Tell us about yourself
+    </p>
+
+    <p id="para2" class="card-body">
+        Tell us about your education
+    </p>
+
+    <p id="para3" class="card-body">
+        Tell us about your IT Skills
+    </p>
+
+    <p id="para4" class="card-body">
+        Share your IT projects
+    </p>
+
+</div>
+
+<section id="about">
+    <h2>About Me</h2>
+    <article>
+        <p>
+            I am an Information Technology student with an insterest in web developemennt and database system. I am currently developing my programmming skills and aimong to build efficient, scalabe web applications.
+        </p>
+    </article>
+</section>
+
+
+<section id="education">
+    <h2>Education</h2>
+    <ol>
+        <li>Bachelor of Science in Information Technology</li>
+        <li>Senior High School – STEM Strand</li>
+        <li>Junior High School Graduate</li>
+    </ol>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+        <li>Basic HTML</li>
+        <li>Basic Python</li>
+        <li>Basic Java</li>
+        
+    </ul>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="project-container">
+        
+        <article class="project-card">
+            <h3>Portfolio Website</h3>
+            <p>A responsive personal portfolio built using semantic HTML and advanced CSS layout techniques.</p>
+        </article>
+
+        <article class="project-card">
+            <h3>Student Record System</h3>
+            <p>A database-driven application that manages student records using SQL and backend logic.</p>
+        </article>
+
+        <article class="project-card">
+            <h3>Java Currency Converter</h3>
+            <p>A simple Java application that converts currency values between different countries.</p>
+        </article>
+
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+    <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+</main>
+
+<script> // JAVA SCRIPT SELECTING HTML ELEMENTS
+    const paragraph1 = document.getElementById("para1");
+    const paragraph2 = document.getElementById("para2");
+
+    console.log(paragraph1);
+    console.log(paragraph2);
+</script>
+
+<footer>
+    <p>&copy; 2026 Ain | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
